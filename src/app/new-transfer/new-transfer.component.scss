@@ -1,0 +1,42 @@
+.form {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  &__title {
+    color: var(--gray-300);
+    text-transform: capitalize;
+  }
+
+  .form-field {
+    &__label {
+      color: var(--gray-300);
+      font-size: 1.2rem;
+    }
+
+    &__input {
+      width: 100%;
+
+      border-radius: 0.8rem;
+      border: 0.1rem solid var(--gray-300);
+      padding: 1rem;
+      outline: none;
+    }
+  }
+}
+.button-wrapper {
+  .button {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: var(--green-100);
+    color: var(--white-100);
+
+    transition: 0.3s all;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
