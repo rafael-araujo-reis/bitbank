@@ -5,12 +5,13 @@
   &__title {
     color: var(--gray-300);
     text-transform: capitalize;
+    margin-bottom: 1.2rem;
   }
 
   .form-field {
     &__label {
       color: var(--gray-300);
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     &__input {
@@ -20,6 +21,7 @@
       border: 0.1rem solid var(--gray-300);
       padding: 1rem;
       outline: none;
+      margin-bottom: 1.2rem;
     }
   }
 }
