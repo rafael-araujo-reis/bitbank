@@ -1,17 +1,19 @@
 <section class="container">
-  <form class="form">
+  <form class="form" (ngSubmit)="transferir()">
     <h2 class="form__title">Nova transferência</h2>
+
     <div class="form-field">
       <label class="form-field__label" for="valueTransfer">Valor a ser transferido</label>
-      <input class="form-field__input" type="number" name="valueTransfer" id="valueTransfer" />
+      <input class="form-field__input" type="number" name="valueTransfer" id="valueTransfer"
+        [(ngModel)]="valueTransfer" />
     </div>
     <div class="form-field">
       <label class="form-field__label" for="count">Número da conta</label>
-      <input class="form-field__input" type="number" name="count" id="count" />
+      <input class="form-field__input" type="number" name="count" id="count" [(ngModel)]="countDestination" />
     </div>
 
     <div class="button-wrapper">
-      <button class="button">Transferir R$0 agora</button>
+      <button class="button" type="submit">Transferir R${{valueTransfer}} agora</button>
     </div>
   </form>
 </section>
