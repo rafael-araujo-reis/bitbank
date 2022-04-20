@@ -1,7 +1,7 @@
 <section class="container">
 
 
-  <table *ngIf="transfers.length > 0">
+  <table *ngIf="transfers.length > 0; else listEmpty">
     <thead>
       <th>Data</th>
       <th>Valor</th>
@@ -15,4 +15,8 @@
       </tr>
     </tbody>
   </table>
+
+  <ng-template #listEmpty>
+    <h4 class="alert info">Você não possui nenhuma transferência realizada</h4>
+  </ng-template>
 </section>
