@@ -1,13 +1,16 @@
 :root {
   --white-100: #ffffff;
-  --black-300: #0D0A0B;
+  --black-300: #0d0a0b;
 
-  --blue-300: #4464AD
+  --blue-300: #4464ad;
+  --yellow-100: #fff0a4;
+  --yellow-300: #ffb534;
+
   --gray-100: #dedede;
   --gray-300: #405040;
 
-  --green-100: #72B01D;
-  --green-300: #3F7D20;
+  --green-100: #72b01d;
+  --green-300: #3f7d20;
 
   --primary: var(--blue-300);
   --secondary: var(--black-300);
@@ -60,4 +63,15 @@ button {
   max-width: 1400px;
   padding: 3rem;
   margin: 0 auto;
+}
+
+.alert {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.info {
+  background-color: var(--yellow-100);
+  color: var(--yellow-300);
 }
