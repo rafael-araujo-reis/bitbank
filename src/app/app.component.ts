@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bitbank';
-  dataTransfer: any;
+  transfers: any[] = [];
 
-  transferBitBank($event){
-    this.dataTransfer = $event;
+  transferBitBank($event) {
+    const transfer = { ...$event, dateTransfer: new Date() };
+    this.transfers.push(transfer);
   }
 }

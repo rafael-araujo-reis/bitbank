@@ -2,7 +2,4 @@
 <app-new-transfer (handleTransfer)="transferBitBank($event)">
 </app-new-transfer>
 
-<ul>
-  <li>Valor: {{dataTransfer?.valueTransfer}}</li>
-  <li>Conta destino: {{dataTransfer?.countDestination}}</li>
-</ul>
+<app-extract [transfers]="transfers"></app-extract>
