@@ -4,16 +4,16 @@
 
     <div class="form-field">
       <label class="form-field__label" for="valueTransfer">Valor a ser transferido</label>
-      <input class="form-field__input" type="number" name="valueTransfer" id="valueTransfer"
-        [(ngModel)]="valueTransfer" />
+      <input class="form-field__input" type="number" name="valueTransfer" id="valueTransfer" [(ngModel)]="valueTransfer"
+        (ngModelChange)="isValide($event)" />
     </div>
     <div class="form-field">
       <label class="form-field__label" for="count">Número da conta</label>
-      <input class="form-field__input" type="number" name="count" id="count" [(ngModel)]="countDestination" />
+      <input class="form-field__input" type="text" name="count" id="count" [(ngModel)]="countDestination" />
     </div>
 
     <div class="button-wrapper">
-      <button class="button" type="submit">Transferir R${{valueTransfer}} agora</button>
+      <button ng-disabled="active" class="button" type="submit">Transferir {{valueTransfer | currency}} agora</button>
     </div>
   </form>
 </section>
