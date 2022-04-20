@@ -1,0 +1,18 @@
+<section class="container">
+
+
+  <table *ngIf="transfers.length > 0">
+    <thead>
+      <th>Data</th>
+      <th>Valor</th>
+      <th>Conta Destino</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transfer of transfers">
+        <td>{{transfer?.dateTransfer | date: 'short'}}</td>
+        <td>{{transfer?.valueTransfer | currency}}</td>
+        <td>{{transfer?.countDestination}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
