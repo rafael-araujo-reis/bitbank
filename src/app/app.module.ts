@@ -1,16 +1,13 @@
-import { NewTransferComponent } from './new-transfer/new-transfer.component';
-import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { ExtractComponent } from './extract/extract.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
-
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { ExtractComponent } from './extract/extract.component';
+import { NewTransferComponent } from './new-transfer/new-transfer.component';
 
 registerLocaleData(localePt, 'pt');
-
 
 @NgModule({
   declarations: [
