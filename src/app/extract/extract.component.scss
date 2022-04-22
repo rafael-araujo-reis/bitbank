@@ -12,8 +12,11 @@ table {
     td {
       width: 100%;
       height: 100%;
+      min-height: 5rem;
 
-      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     th {
@@ -23,8 +26,9 @@ table {
         border-left: 0.2rem solid rgba(255, 255, 255, 1);
       }
     }
-
-    td {
+  }
+  tbody {
+    tr {
       border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
     }
   }

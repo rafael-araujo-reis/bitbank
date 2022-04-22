@@ -30,7 +30,6 @@ export class NewTransferComponent {
   }
 
   isValide($event) {
-    console.log($event !== null || $event > 0);
     this.active = $event !== null || $event > 0;
   }
 }
